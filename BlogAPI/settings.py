@@ -64,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'BlogAPI.urls'
@@ -142,10 +143,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    # Other middlewares...
-]
 
 CORS_ALLOWED_ORIGIN = ['*']
