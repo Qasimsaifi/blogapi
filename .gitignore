@@ -1,0 +1,41 @@
+# Ignore virtual environment
+env/
+
+# Ignore Django generated files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore local development settings
+local_settings.py
+
+# Ignore the .env file
+.env
+
+# Ignore database files
+*.sqlite3
+
+# Ignore static and media files
+/static/
+/media/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore logs and cache
+*.log
+__pycache__/
+
+# Ignore backup files
+*~
+*.bak
+
+# Ignore secret key file (if applicable)
+secret_key.txt
+
+# Ignore compiled translations
+*.mo
+
+# Ignore development tools and configuration
+/.envrc
