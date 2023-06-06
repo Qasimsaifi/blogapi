@@ -1,1 +1,1 @@
-web: gunicorn BlogAPI.wsgi --log-file=/path/to/logfile
+web: gunicorn BlogAPI.wsgi --log-file
