@@ -161,9 +161,9 @@ CSRF_TRUSTED_ORIGINS = [
 #     'http://your-frontend-domain.com',
 #     # Add other trusted frontend domains as needed
 # ]
-STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
-# Extra lookup directories for collectstatic to find static files
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,'static'),
-)
+# STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/staticfiles/'
+# # Extra lookup directories for collectstatic to find static files
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR,'static'),
+# )
