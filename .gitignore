@@ -11,12 +11,7 @@ local_settings.py
 # Ignore the .env file
 .env
 
-# Ignore database files
-*.sqlite3
 
-# Ignore static and media files
-/static/
-/media/
 
 # Ignore IDE-specific files
 .vscode/
