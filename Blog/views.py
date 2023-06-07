@@ -2,7 +2,6 @@ from rest_framework import viewsets
 from .models import BlogPost
 from .serializers import BlogPostSerializer
 import django_filters.rest_framework
-from rest_framework import generics
 from rest_framework.filters import OrderingFilter
 from rest_framework.pagination import PageNumberPagination
 
@@ -14,7 +13,7 @@ class BlogPostFilter(django_filters.FilterSet):
 class BlogPostPagination(PageNumberPagination):
     page_size = 6
 
-class BlogPostViewSet(viewsets.ModelViewSet):
+class BlogPostViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = BlogPost.objects.all()
     serializer_class = BlogPostSerializer
     filter_backends = [django_filters.rest_framework.DjangoFilterBackend, OrderingFilter]
