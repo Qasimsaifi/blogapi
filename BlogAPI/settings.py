@@ -39,8 +39,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-if not DEBUG:
-    CSRF_TRUSTED_ORIGINS = ['*']
+CSRF_TRUSTED_ORIGINS = ['*']
 
 
 # Application definition
