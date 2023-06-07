@@ -1,5 +1,6 @@
 # Ignore virtual environment
 # Ignore Django generated files
+env/
 *.pyc
 *.pyo
 __pycache__/
