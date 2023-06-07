@@ -141,8 +141,6 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -158,8 +156,14 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = [
-    'http://your-frontend-domain.com',
-    # Add other trusted frontend domains as needed
-]
+# CORS_ORIGIN_ALLOW_ALL = False
+# CORS_ORIGIN_WHITELIST = [
+#     'http://your-frontend-domain.com',
+#     # Add other trusted frontend domains as needed
+# ]
+STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+# Extra lookup directories for collectstatic to find static files
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'static'),
+)
