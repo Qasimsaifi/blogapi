@@ -35,7 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q_1(p4litu&2&*$(bjhj^6l-g)xsohwlz1)f@-9qi&^u!pq+&)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =True
+DEBUG =False
 
 ALLOWED_HOSTS = ["*"]
 CORS_ORIGIN_WHITELIST = [
@@ -161,9 +161,9 @@ CSRF_TRUSTED_ORIGINS = [
 #     'http://your-frontend-domain.com',
 #     # Add other trusted frontend domains as needed
 # ]
-# STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
+STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
 # # Extra lookup directories for collectstatic to find static files
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR,'static'),
-# )
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'static'),
+)
