@@ -38,6 +38,10 @@ SECRET_KEY = 'django-insecure-q_1(p4litu&2&*$(bjhj^6l-g)xsohwlz1)f@-9qi&^u!pq+&)
 DEBUG =True
 
 ALLOWED_HOSTS = ["*"]
+CORS_ORIGIN_WHITELIST = [
+    'https://web-production-734a.up.railway.app',
+    # Add other trusted origins as needed
+]
 
 # CSRF_TRUSTED_ORIGINS = [' https://web-production-6ab9.up.railway.app']
 
@@ -62,7 +66,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
